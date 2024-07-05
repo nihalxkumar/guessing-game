@@ -17,5 +17,5 @@ default = []
 
 [dependencies]
 anchor-lang = "0.29.0"
-orao-solana-vrf = { version = "0.4.0",  default-features = false, features = ["cpi"] }
-solana-program = "1.18.2"
+orao-solana-vrf = { version = "0.4.0", default-features = false, features = ["cpi"] }
+solana-program = "1.18.15"

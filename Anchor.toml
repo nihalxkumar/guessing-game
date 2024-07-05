@@ -1,6 +1,6 @@
 [toolchain]
-# solana-cli="1.18.8" 
-# anchor-cli="0.29.0"
+solana-cli = "1.18.15"
+anchor-cli = "0.29.0"
 
 [features]
 seeds = false
