@@ -9,12 +9,38 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@coral-xyz/anchor-errors@^0.30.1":
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/@coral-xyz/anchor-errors/-/anchor-errors-0.30.1.tgz#bdfd3a353131345244546876eb4afc0e125bec30"
+  integrity sha512-9Mkradf5yS5xiLWrl9WrpjqOrAV+/W2RQHDlbnAZBivoGpOs1ECjoDCkVk4aRG8ZdiFiB8zQEVlxf+8fKkmSfQ==
+
 "@coral-xyz/anchor@^0.29.0":
   version "0.29.0"
   resolved "https://registry.yarnpkg.com/@coral-xyz/anchor/-/anchor-0.29.0.tgz#bd0be95bedfb30a381c3e676e5926124c310ff12"
   integrity sha512-eny6QNG0WOwqV0zQ7cs/b1tIuzZGmP7U7EcH+ogt4Gdbl8HDmIYVMh/9aTmYZPaFWjtUaI8qSn73uYEXWfATdA==
   dependencies:
     "@coral-xyz/borsh" "^0.29.0"
+    "@noble/hashes" "^1.3.1"
+    "@solana/web3.js" "^1.68.0"
+    bn.js "^5.1.2"
+    bs58 "^4.0.1"
+    buffer-layout "^1.2.2"
+    camelcase "^6.3.0"
+    cross-fetch "^3.1.5"
+    crypto-hash "^1.3.0"
+    eventemitter3 "^4.0.7"
+    pako "^2.0.3"
+    snake-case "^3.0.4"
+    superstruct "^0.15.4"
+    toml "^3.0.0"
+
+"@coral-xyz/anchor@^0.30.0":
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/@coral-xyz/anchor/-/anchor-0.30.1.tgz#17f3e9134c28cd0ea83574c6bab4e410bcecec5d"
+  integrity sha512-gDXFoF5oHgpriXAaLpxyWBHdCs8Awgf/gLHIo6crv7Aqm937CNdY+x+6hoj7QR5vaJV7MxWSQ0NGFzL3kPbWEQ==
+  dependencies:
+    "@coral-xyz/anchor-errors" "^0.30.1"
+    "@coral-xyz/borsh" "^0.30.1"
     "@noble/hashes" "^1.3.1"
     "@solana/web3.js" "^1.68.0"
     bn.js "^5.1.2"
@@ -37,6 +63,14 @@
     bn.js "^5.1.2"
     buffer-layout "^1.2.0"
 
+"@coral-xyz/borsh@^0.30.1":
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/@coral-xyz/borsh/-/borsh-0.30.1.tgz#869d8833abe65685c72e9199b8688477a4f6b0e3"
+  integrity sha512-aaxswpPrCFKl8vZTbxLssA2RvwX2zmKLlRCIktJOwW+VpVwYtXRtlWiIP+c2pPRKneiTiWCN2GEMSH9j1zTlWQ==
+  dependencies:
+    bn.js "^5.1.2"
+    buffer-layout "^1.2.0"
+
 "@noble/curves@^1.2.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.4.0.tgz#f05771ef64da724997f69ee1261b2417a49522d6"
@@ -54,10 +88,10 @@
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.4.0.tgz#45814aa329f30e4fe0ba49426f49dfccdd066426"
   integrity sha512-V1JJ1WTRUqHHrOSh597hURcMqVKVGL/ea3kv0gSnEdsEZ0/+VyPghM1lMNGc00z7CIQorSvbKpuJkxvuHbvdbg==
 
-"@orao-network/solana-vrf@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@orao-network/solana-vrf/-/solana-vrf-0.3.0.tgz#88464266031a5fc1ddabb1e6fb09ebc7bd431ea3"
-  integrity sha512-Jg8byV/UF5yKgsGJvrfl+5JUJ+hqz9CVyUUiBLtdJ/mVi9n+2gyae1NrDMCrDNFcpqsUJ8HfZzh6KsXZoqdgkw==
+"@orao-network/solana-vrf@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@orao-network/solana-vrf/-/solana-vrf-0.4.0.tgz#ad5a32349bc42c74725b93b83c107c5eef8f0314"
+  integrity sha512-wSpy4q3ptM/u8S8Wow+2gbX4pLqQmaEfImvJlrpiCT26a6e6UzQjbLPfsI3IElOaIMQNBNXT/zz5d8lOFjBqjA==
   dependencies:
     "@coral-xyz/anchor" "^0.29.0"
     "@noble/ed25519" "^1.6.1"
@@ -770,11 +804,6 @@ ms@2.1.3, ms@^2.0.0:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
-
-nacl@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/nacl/-/nacl-0.1.3.tgz#91f27c38cba624618423334e051e8f76f3d6374b"
-  integrity sha512-QGg/Xmtnvxzzmbp6K4nnvKEDIkH/IFXfBLoZd1J81ub4d6olr7tGpfRkAPC0WdUFLXcsOOQmyRTHZdAUnF6PKw==
 
 nanoid@3.3.1:
   version "3.3.1"
