@@ -1,20 +1,20 @@
-use anchor_lang::prelude::*;
 use std::cmp::Ordering;
 use std::mem::size_of;
 
+use anchor_lang::prelude::*;
 use orao_solana_vrf::{
-    cpi::accounts::RequestV2, program::OraoVrf, state::NetworkState, CONFIG_ACCOUNT_SEED,
-    RANDOMNESS_ACCOUNT_SEED,
+    CONFIG_ACCOUNT_SEED, cpi::accounts::RequestV2, program::OraoVrf, RANDOMNESS_ACCOUNT_SEED,
+    state::NetworkState,
 };
 
-pub mod misc;
 use self::misc::get_account_data;
 
-declare_id!("HMDRWmYvL2A9xVKZG8iA1ozxi4gMKiHQz9mFkURKrG4"); // ! UPDATE ME
+pub mod misc;
+
+declare_id!("9vsSxUro9oWpHUFgt3wKpcyyLMBRhV6ve6wRq7Qj3J4D");
 
 #[program]
 pub mod guessing_game {
-
     use super::*;
 
     pub fn initialize(
@@ -68,7 +68,7 @@ pub struct GuessingGame<'info> {
     /// CHECK:
     #[account(
         mut,
-        seeds = [RANDOMNESS_ACCOUNT_SEED.as_ref(), &force_seed],
+        seeds = [RANDOMNESS_ACCOUNT_SEED.as_ref(), & force_seed],
         bump,
         seeds::program = orao_solana_vrf::ID
     )]
